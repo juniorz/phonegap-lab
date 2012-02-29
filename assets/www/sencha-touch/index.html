@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>PhoneGap</title>
+  <script type="text/javascript" charset="utf-8" src="libs/phonegap-1.4.1.js"></script>
+  <script type="text/javascript" src="http://macmini.local:8081/target/target-script-min.js#phonegap-todo"></script>
+  <script src="libs/sencha-touch/js/sencha-touch.js" type="text/javascript"></script> 
+  <link href="libs/sencha-touch/css/sencha-touch.css" rel="stylesheet" type="text/css" /> 
+
+        <script type="text/javascript"> 
+ 
+            new Ext.Application({
+                launch: function() {
+                    new Ext.Panel({
+                        fullscreen: true,
+                        html: 'Hello World!'
+                    });
+                }
+            });
+ 
+         document.addEventListener("deviceready", function () {
+           alert('Our first PhoneGap app');
+         }, false);
+
+        </script> 
+
+</head>
+<body>
+  <h1>Sencha Touch Example</h1>
+</body>
+</html>
